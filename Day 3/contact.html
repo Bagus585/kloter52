@@ -29,16 +29,16 @@
       <form class="bodycontact1">
         <h2 style="text-align: center">GET IN TOUCH</h2>
         <label>Name</label>
-        <input class="inputLabel" />
+        <input class="inputLabel" id="Ipnama" />
 
         <label>Email</label>
-        <input class="inputLabel" />
+        <input class="inputLabel" id="Ipemail" />
 
         <label>Phone Number</label>
-        <input class="inputLabel" />
+        <input class="inputLabel" id="Ipphone" />
 
         <label>Subject</label>
-        <select class="inputLabel">
+        <select class="inputLabel" id="Ipsubject">
           <option type="text"></option>
           <option type="text">Front End</option>
           <option type="text">Back End</option>
@@ -46,12 +46,18 @@
         </select>
 
         <label>Your Message</label>
-        <textarea class="message"> </textarea>
+        <textarea class="message" id="Ippesan"> </textarea>
 
         <div class="message1">
-          <input type="button" value="submit" class="submit" />
+          <input
+            type="button"
+            value="Submit"
+            class="submit"
+            onclick="submitData()"
+          />
         </div>
       </form>
     </div>
+    <script src="contact.js"></script>
   </body>
 </html>
