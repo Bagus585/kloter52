@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="/images/logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/testimonial.css">
+  </head>
+    <body>
+        <!-- Start Navbar -->
+        <nav class="navDiv">
+            <div class="navDiv1">
+              <ul class="uls">
+                <li><img src="Asset/image/dumbways.jpeg" width="80px" /></li>
+                <li>
+                  <a href="index.html" class="ul-li"> <p>Home</p></a>
+                </li>
+      
+                <li>
+                  <a href="myproject.html" class="ul-li"><span>MyProject</span></a>
+                </li>
+                <li>
+                    <a class="ul-li" href="testimonial.html"><p>Testimonial</p></a>
+                </li>
+              </ul>
+      
+              <div class="contactme">
+                <a href="contact.html" class="contactme1">
+                  Contact Me
+                </a>
+              </div>
+              <div class="burger-nav">
+                <button class="burger-button" onclick="openBurger()">
+                    <i class="fa-2x fa-solid fa-bars"></i>
+                </button>
+            </div>
+            </div>
+          </nav>
+          <div class="burger-container" id="burger-container">
+            <a href="index.html" >Home</a>
+            <a href="myproject.html">My Project</a>
+            <a href="contact.html">Contact Me</a>
+            <a href="testimonial.html" class="burger-active">Testimonial</a>
+        </div>
+        <!-- End Navbar -->
+
+     <!-- start testimonial -->
+        <div class="testi-container">
+          <h1>My Testimonial</h1>
+          <div class="container-ratting">
+            <h2> Ratting By star</h2>
+            <div class="ratting">
+              <button class="btn-rate" onclick="RattingAll()"><i class="fa-solid fa-star"></i> All </button>
+              <button class="btn-rate" onclick="ScoreRatting()">1<i class="fa-solid fa-star"></i></button>
+              <button class="btn-rate" onclick="ScoreRatting(2)">2<i class="fa-solid fa-star"></i></button>
+              <button class="btn-rate" onclick="ScoreRatting(3)">3<i class="fa-solid fa-star"></i></button>
+              <button class="btn-rate" onclick="ScoreRatting(4)">4<i class="fa-solid fa-star"></i></button>
+              <button class="btn-rate" onclick="ScoreRatting(5)">5<i class="fa-solid fa-star"></i></button>
+            </div>
+          </div>
+          <section class="testimonial" id="testimonial">
+
+            <div class="testimoni">
+              <img src="https://th.bing.com/th/id/OIP.aKqXF7ZMkHnKYZVfLoxs2QAAAA?rs=1&pid=ImgDetMain" alt="testi" class="profile-testi">
+              <p class="quote"> "Awesome" </p>
+              <p class="author"> -ABAS-</p>
+              <p class="ratting-5"><i class="fa-solid fa-star">4 </i>
+               </p>
+            </div>
+          </section>
+        </div>
+    </body>
+    <script src="JS/humberger.js"></script>
+    <script src="JS/testimonial.js"></script>
+   
+</html>
