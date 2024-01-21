@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <title>contact</title>
+  </head>
+
+  <body class="BODIawal">
+    <nav class="navDiv">
+      <div class="navDiv1">
+        <ul class="uls">
+          <li><img src="Asset/image/dumbways.jpeg" width="80px" /></li>
+          <li>
+            <a href="index.html" class="ul-li"> <p>Home</p></a>
+          </li>
+
+          <li>
+            <a href="myproject.html" class="ul-li"><span>MyProject</span></a>
+          </li>
+        </ul>
+
+        <div class="contactme">
+          <a href="contact.html" class="contactme1"> Contact Me </a>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <div class="bodycontact">
+      <form class="bodycontact1">
+        <h2 style="text-align: center">GET IN TOUCH</h2>
+        <label>Name</label>
+        <input class="inputLabel" id="Ipnama" />
+
+        <label>Email</label>
+        <input class="inputLabel" id="Ipemail" />
+
+        <label>Phone Number</label>
+        <input class="inputLabel" id="Ipphone" />
+
+        <label>Subject</label>
+        <select class="inputLabel" id="Ipsubject">
+          <option type="text"></option>
+          <option type="text">Front End</option>
+          <option type="text">Back End</option>
+          <option type="text">Fullstack</option>
+        </select>
+
+        <label>Your Message</label>
+        <textarea class="message" id="Ippesan"> </textarea>
+
+        <div class="message1">
+          <input
+            type="button"
+            value="Submit"
+            class="submit"
+            onclick="submitData()"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="JS/contact.js"></script>
+  </body>
+</html>

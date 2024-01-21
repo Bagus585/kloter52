@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.project {
+  background-color: rgb(220, 224, 228);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: auto;
+  background-color: rgb(220, 224, 228);
+  gap: 5px;
+}
+
+.project-form input,
+.project-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 7px;
+  border: 1px solid #dbdbdb;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px gray;
+  box-sizing: border-box;
+}
+
+.project-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.date ul {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tech {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0;
+  padding: 0;
+}
+
+.tech ul {
+  list-style-type: none;
+  padding: 0;
+  margin-right: 50px;
+}
+
+.project form .inputProject-group {
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: white;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 2px 5px gray;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project form .inputProject-group label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.project form .inputProject-group label {
+  font-size: 15px;
+  color: #777777;
+}
+
+.project form .inputProject-group p {
+  background: #dbdbdb;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  display: flex;
+  margin: 0;
+  padding: 10px;
+}
+
+.submit {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: black;
+  padding: 5px 20px;
+  width: fit-content;
+  color: aliceblue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* start popup */
+
+.title-project h1 {
+  background-color: white;
+  margin: 0;
+  padding: 50px;
+  text-align: center;
+}
+.project-list {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+.project-container {
+  width: 330px;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px gray;
+  margin: 10px;
+  padding: 20px;
+}
+
+.project-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-image img {
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+}
+
+.project-icon ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  margin: 30px 0;
+  padding: 0;
+}
+
+.project-button {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.edit,
+.delete {
+  background-color: black;
+  margin: 0;
+  width: 150px;
+  padding: 5px 25px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Name</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="icon" href="/images/logo.png" /> -->
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <link rel="stylesheet" href="css/myproject.css" />
+    <link rel="stylesheet" href="css/detail-project.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navDiv">
+      <div class="navDiv1">
+        <ul class="uls">
+          <li><img src="Asset/image/dumbways.jpeg" width="80px" /></li>
+          <li>
+            <a href="index.html" class="ul-li"> <p>Home</p></a>
+          </li>
+
+          <li>
+            <a href="myproject.html" class="ul-li"><span>MyProject</span></a>
+          </li>
+        </ul>
+
+        <div class="contactme">
+          <a href="contact.html" class="contactme1"> Contact Me </a>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+      <div class="project">
+        <form class="project-form" onsubmit="submitBlog(event)">
+          <div style="display: flex; justify-content: center;">
+            <h1>ADD MY PROJECT</h1>
+          </div>
+
+          <div>
+            <label for="iName">Project Name</label>
+            <input type="text" id="iName" />
+          </div>
+
+          <div class="date">
+            <ul>
+              <li>
+                <label for="onDate">Start Date</label>
+                <input type="date" id="onDate" />
+              </li>
+              <li>
+                <label for="enDate">End Date</label>
+                <input type="date" id="enDate" />
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 10px">
+            <label for="description">Description</label>
+            <textarea id="description"></textarea>
+          </div>
+
+          <label>Technologies</label>
+          <div class="tech">
+            <ul>
+              <li>
+                <input type="checkbox" id="tech1" style="width: auto" />
+                <label for="tech1">Node JS</label>
+              </li>
+              <li>
+                <input type="checkbox" id="tech2" style="width: auto" />
+                <label for="tech2">React JS</label>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <input type="checkbox" id="tech3" style="width: auto" />
+                <label for="tech3">Next JS</label>
+              </li>
+              <li>
+                <input type="checkbox" id="tech4" style="width: auto" />
+                <label for="tech4">TypeScript</label>
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <label>Upload Image</label>
+            <div class="inputProject-group">
+              <label for="gambar">
+                <p>Choose</p>
+                <img
+                  src="Asset/image/attach-file.png"
+                  alt="file"
+                  width="30px"
+                />
+              </label>
+              <input type="file" id="gambar" hidden="" />
+            </div>
+          </div>
+
+          <div style="display: flex ;justify-content: flex-end;">
+            <button type="submit" class="submit">Post Project</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Input -->
+
+  <!-- Detail-Project-Start -->
+  <hr class="line" />
+  <div id="project-li" style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <!-- dynamic content would be here -->
+  </div>
+
+  <!-- <div class="title-project">
+    <h1>MY PROJECT</h1>
+</div>
+<div class="project-list" id="project-li">
+    <div class="project-container" id="project-item">
+        <a href="detail-project.html">
+        <div class="project-image">
+            <img src="Asset/image/digital.jpg">
+        </div>
+        <p style="font-weight: bold;">Dumbways Mobile App 2024</p>
+        <p style="font-size: 15px; color: gray;">Duration : 3 Months</p>
+
+        <div class="project-content">
+            <p>Pelaku industri digital meyakini Indonesia akan menjadi pelaku besar
+              dalam sektor ini. Kuncinya, ada kerja sama pemerintah dan pelaku
+              sektor industri ini dalam memetakan tantangan ke depan.
+            </p>
+        </div>
+
+        <div class="project-icon">                    
+            <ul>
+                <li>
+                    <img style="width: 30px" src="Asset/image/node.png"> 
+                </li>
+                <li>
+                    <img style="width: 30px" src="Asset/image/react.png">
+                </li>
+                <li>
+                    <img style="width: 30px" src="Asset/image/Next.js.png">
+                </li>
+                <li>
+                    <img style="width: 30px" src="Asset/image/TypeScript.png">
+                </li>
+            </ul>
+        </div>
+        <div class="project-button">
+            <button class="edit" type="button">Edit</button>
+            <button class="delete" type="button">Delete</button>
+        </div>
+        </a>
+    </div>
+    
+</div> -->
+
+</body>
+</head>
+<script src="JS/myproject.js"></script>
+  </body>
+</html>
