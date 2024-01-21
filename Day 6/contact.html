@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <link href="./assets/images/logo.png" rel="icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>contact</title>
+  </head>
+
+  <body class="BODIawal">
+    <nav class="navDiv">
+      <div class="navDiv1">
+        <ul class="uls">
+          <li><img src="Asset/image/dumbways.jpeg" width="80px" /></li>
+          <li>
+            <a href="index.html" class="ul-li"> <p>Home</p></a>
+          </li>
+
+          <li>
+            <a href="myproject.html" class="ul-li"><span>MyProject</span></a>
+          </li>
+        </ul>
+
+        <div class="contactme">
+          <a href="contact.html" class="contactme1"> Contact Me </a>
+        </div>
+        <div class="burger-nav">
+          <button class="burger-button" onclick="openBurger()">
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="burger-container" id="burger-container">
+      <a href="index.html">Home</a>
+      <a href="myproject.html">My Project</a>
+      <a href="contact.html" class="burger-active">Contact Me</a>
+    </div>
+    <!-- end navbar -->
+
+    <div class="bodycontact">
+      <form class="bodycontact1">
+        <h2 style="text-align: center">GET IN TOUCH</h2>
+        <label>Name</label>
+        <input class="inputLabel" id="Ipnama" />
+
+        <label>Email</label>
+        <input class="inputLabel" id="Ipemail" />
+
+        <label>Phone Number</label>
+        <input class="inputLabel" id="Ipphone" />
+
+        <label>Subject</label>
+        <select class="inputLabel" id="Ipsubject">
+          <option type="text"></option>
+          <option type="text">Front End</option>
+          <option type="text">Back End</option>
+          <option type="text">Fullstack</option>
+        </select>
+
+        <label>Your Message</label>
+        <textarea class="message" id="Ippesan"> </textarea>
+
+        <div class="message1">
+          <input
+            type="button"
+            value="Submit"
+            class="submit"
+            onclick="submitData()"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="JS/contact.js"></script>
+  </body>
+</html>
